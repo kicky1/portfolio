@@ -1,12 +1,11 @@
 {
-  "name": "chronark.com",
+  "name": "krzysztofwicki.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "fmt": "pnpm rome check . --apply-suggested && pnpm rome format . --write"
+    "start": "next start"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
@@ -23,12 +22,10 @@
     "@upstash/redis": "^1.20.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "contentlayer": "^0.3.0",
     "framer-motion": "^10.12.12",
     "lucide-react": "^0.220.0",
     "markdown-wasm": "^1.2.0",
     "next": "13.4.3",
-    "next-contentlayer": "^0.3.0",
     "pnpm": "^8.6.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
