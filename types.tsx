@@ -1,0 +1,3 @@
+type BadgeSkill = {
+    name: string
+}

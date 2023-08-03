@@ -1,0 +1,15 @@
+{
+    "style": "default",
+    "tailwind": {
+      "config": "tailwind.config.ts",
+      "css": "global.css",
+      "baseColor": "zinc",
+      "cssVariables": true
+    },
+    "rsc": false,
+    "aliases": {
+      "utils": "/lib/utils",
+      "components": "app/components/ui/"
+    }
+  }
+  
