@@ -29,8 +29,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
-					Here you will find several projects that I made during my free time. 
-					Some of them were made on commission and others for the sake of training.
+						Here you will find several projects that I made during my free time. 
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
