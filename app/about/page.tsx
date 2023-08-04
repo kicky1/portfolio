@@ -101,7 +101,7 @@ export default async function ProjectsPage() {
                   </div>
                   <div className="mt-4 col-span-12 px-4 space-y-6 sm:col-span-9">
                     <a
-                      href={'https://drive.google.com/file/d/1CCrbRInScV14FTeiN-9fPp9v4_HVFtdm/view?usp=sharing'}
+                      href={'https://drive.google.com/file/d/1VET4OqjHG4w3UvBpr8WEJZIDcad3BbhN/view?usp=sharing'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center font-medium text-zinc-100 hover:underline group"
