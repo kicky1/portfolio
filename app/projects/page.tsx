@@ -6,6 +6,7 @@ import portfoliov2 from '../../images/portfoliov2.png';
 import terraomega from '../../images/terraomega.png';
 import commenterimg from '../../images/commenterimg.png';
 import omeup from '../../images/1up.png';
+import interviewtasks from '../../images/interviewtasks.png';
 
 const { v4: uuidv4 } = require('uuid');
 
@@ -13,9 +14,10 @@ export default async function ProjectsPage() {
 	
 	const data = [
 		{title:'1UP', web:'https://oneup-pi.vercel.app/', image:omeup.src, badge:[{name: 'Nextjs 13'},{name: 'Typescript'}, {name: 'Zustand'}, {name: 'Mantine'}, {name: 'TanStack'}, {name: 'Supabase'}], github:'https://github.com/Cartel-1UP/1UP-website',  description:'1UP is an application that allows users to browse blogs and interact with them such as liking posts or leaving comments. It was made on behalf of DAO and is connected to the Hive blockchain.'},
+		{title:'TerraOmega', web:'https://terra-omega.vercel.app/', image:terraomega.src,  badge:[{name: 'Next.js 13'},{name: 'Typescript'}, {name: 'Zustand'}, {name: 'Mantine'}, {name: 'TanStack'}, {name: 'Supabase'}], github:'https://github.com/kicky1/terra_bot', description:`The powerful tool designed for crypto gamers who want to maximize their earnings in the Terracore.`},
+		{title:'Interview Tasks', web:'https://interviewtasks.vercel.app/', image:interviewtasks.src, badge:[{name: 'Nextjs 13'},{name: 'Typescript'},{name: 'JavaScript'}, ], github:'https://github.com/kicky1/interview',  description:'Interview Tasks is a web application with a collection of tasks which can be asked during the interview. It was made to help people prepare for the interview.'},
 		{title:'Portfolio v2', image:portfoliov2.src, badge:[{name: 'Next.js 13'},{name: 'Typesciprt'}, {name: 'Shadcn'}],  github:'https://github.com/kicky1/portfolio', description:'Portfolio v2 is the page you are currently looking at. It was made to present my person in a simple and clear way.'},
 		{title:'Commenter', image:commenterimg.src, badge:[{name: 'Next 13'},{name: 'Typescript'}, {name: 'Zustand'}, {name: 'Mantine'}, {name: 'TanStack'}, {name: 'Emotion'}, {name: 'Firebase'}], github:'https://github.com/kicky1/Commenter', description:'Commenter is a simple web application that allows users to leave comments.'},
-		{title:'TerraOmega', web:'https://terra-omega.vercel.app/', image:terraomega.src,  badge:[{name: 'Next.js 13'},{name: 'Typescript'}, {name: 'Zustand'}, {name: 'Mantine'}, {name: 'TanStack'}, {name: 'Supabase'}], github:'https://github.com/kicky1/terra_bot', description:`The powerful tool designed for crypto gamers who want to maximize their earnings in the Terracore.`},
 		{title:'eTrener',image:'',  badge:[], github:'https://github.com/kicky1/eTrener2', description:`Engineering thesis - Image processing based athleets training support system.`},
 		{title:'ActivityRecognition',image:'',  badge:[], github:'https://github.com/kicky1/ActivityRecognition', description:`Master thesis - AI system to recognize variability of conditions in the elderly.`},
 	]

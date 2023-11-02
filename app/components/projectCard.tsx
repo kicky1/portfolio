@@ -41,7 +41,7 @@ export const ProjectCard = ({title, description, github, badge, image, web}: Pro
                         <Image 
                             src={image ? image : placeholder.src} 
                             alt={"image"} 
-                            width={400}
+                            width={200}
                             height={400}
                             placeholder="blur"
                             blurDataURL={image ? image : placeholder.src}

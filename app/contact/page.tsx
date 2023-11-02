@@ -7,7 +7,7 @@ const socials = [
 	{
 		icon: <Linkedin size={20} />,
 		href: "https://www.linkedin.com/in/krzysztof-wicki-ba19571b5/",
-		label: "Twitter",
+		label: "Linekdin",
 		handle: "@kwicki",
 	},
 	{

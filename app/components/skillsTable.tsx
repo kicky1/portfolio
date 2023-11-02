@@ -2,15 +2,16 @@
 
 import {LogoReact} from '@styled-icons/ionicons-solid/LogoReact';
 import {Vuejs} from '@styled-icons/boxicons-logos/Vuejs';
-import {Java} from '@styled-icons/fa-brands/Java';
 import {Python} from '@styled-icons/boxicons-logos/Python';
 import { Github } from '@styled-icons/bootstrap/Github';
 import {Adobexd} from '@styled-icons/simple-icons/Adobexd'
 import {Mongodb} from '@styled-icons/simple-icons/Mongodb'
 import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs'
-
+import {Hive} from '@styled-icons/fa-brands/Hive'
 import {Adobephotoshop} from '@styled-icons/simple-icons/Adobephotoshop'
-import { Aws } from 'styled-icons/fa-brands';
+import {Cisco} from '@styled-icons/simple-icons/Cisco'
+import {Redux} from '@styled-icons/boxicons-logos/Redux'
+import {Aws} from '@styled-icons/boxicons-logos/Aws'
 import {
     Css3,
     Javascript,
@@ -45,7 +46,6 @@ export const SkillsTable = () => {
         { name: "Nuxt.js", icon: <Nuxtdotjs />, color: "#41b883" },
         { name: "Python", icon: <Python />, color: "#FFE873" },
         { name: "Flask", icon: <Flask />, color: "#ffffff" },
-        { name: "Java", icon: <Java />, color: "#f89820" },
         { name: "Nodejs", icon: <Nodejs />, color: "#68A063" },
         { name: "MongoDB", icon: <Mongodb />, color: "#4DB33D" },
         { name: "Supabase", icon: <Supabase />, color: "#4DB33D" },
@@ -61,6 +61,9 @@ export const SkillsTable = () => {
         { name: "Photoshop", icon: <Adobephotoshop />, color: "#4FCCFE" },
         { name: "Figma", icon: <Figma />, color: "#A259FF" },
         { name: "AdobeXD", icon: <Adobexd />, color: "#B82357" },
+        { name: "Cisco", icon: <Cisco />, color: "#049fd9" },
+        { name: "Hive", icon: <Hive />, color: "#B82357" },
+        { name: "Redux", icon: <Redux />, color: "#764abc" },
     ];
 
 	return (
