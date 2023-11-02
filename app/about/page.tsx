@@ -2,7 +2,7 @@ import React from "react";
 import { Navigation } from "../components/nav";
 import { TimelineCard } from "../components/timelineCard";
 import Image from "next/image";
-import image from '../../images/krzysio.png'
+import image from '../../images/krzysio2.jpg'
 import { ArrowRight } from "lucide-react";
 import { SkillsTable } from "../components/skillsTable";
 
@@ -54,7 +54,7 @@ export default async function ProjectsPage() {
               <div className="col-span-12 px-4 space-y-6 sm:col-span-9">
                 <div className="flex items-center justify-center col-span-12 space-y-12 relative px-4 col-span-8 space-y-8">
                   <div className=" max-w-md relative border border-zinc-100 before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-zinc-100 before:border-r before:border-zinc-100  before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)]">
-                      <Image src={image.src} alt=""  width={448} height={448} className="object-cover" />
+                      <Image src={image.src} alt=""  width={408} height={408} className="object-cover shadow-inner " />
                   </div>
                 </div>
               </div>
