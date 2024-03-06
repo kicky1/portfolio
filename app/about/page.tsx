@@ -2,7 +2,7 @@ import React from "react";
 import { Navigation } from "../components/nav";
 import { TimelineCard } from "../components/timelineCard";
 import Image from "next/image";
-import image from "../../images/portfolio.jpg";
+import image from "../../images/portfoliov2.jpg";
 import { ArrowRight } from "lucide-react";
 import { SkillsTable } from "../components/skillsTable";
 
