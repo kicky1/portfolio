@@ -33,8 +33,6 @@ import { cloneElement } from "react";
 
 const { v4: uuidv4 } = require('uuid');
 
-
-
 export const SkillsTable = () => {
     const skills = [
         { name: "HTML", icon: <Html5 />, color: "#e34c26" },
