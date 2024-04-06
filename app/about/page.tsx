@@ -26,7 +26,7 @@ export default async function ProjectsPage() {
               <p className="mt-4 text-zinc-400">
                 Hey everyone, I'm Krzysztof Wicki, a <span className="font-bold tracking-tight text-zinc-100">{` mid-level `}</span>
                 frontend developer with a strong passion for creating cutting-edge web applications. With over
-                <span className="font-bold tracking-tight text-zinc-100">{` three years `}</span> of experience in the industry, I've had the opportunity to work on exciting projects and continuously enhance my skills. Moreover, I've had the privilege of working closely with clients, engaging in productive communication to understand their requirements and create
+                <span className="font-bold tracking-tight text-zinc-100">{` four years `}</span> of experience in the industry, I've had the opportunity to work on exciting projects and continuously enhance my skills. Moreover, I've had the privilege of working closely with clients, engaging in productive communication to understand their requirements and create
                 <span className="font-bold tracking-tight text-zinc-100">{` UI/UX designs `}</span> that align perfectly with their project goals. This collaborative aspect of my work has allowed me to not only develop technical skills but also strengthen my ability to create solutions that truly resonate with users.
               </p>
 

@@ -3,7 +3,7 @@ import { Navigation } from "../components/nav";
 import frog from '../../images/frog.png'
 import pingu from '../../images/pingu.png'
 import drBlight from '../../images/reaper.png'
-import me from '../../images/me.png'
+import me from '../../images/me.png' 
 import furiousChicken from '../../images/chicken.png'
 import alric from '../../images/alric.gif'
 
