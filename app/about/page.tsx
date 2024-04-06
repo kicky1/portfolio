@@ -69,7 +69,7 @@ export default async function ProjectsPage() {
                   </div>
                 </div>
                 <div className="mt-4 col-span-12 px-4 space-y-6 lg:col-span-9">
-                  <a href={"https://drive.google.com/file/d/1cA4euMvgoIW5I_JDiAa0qInc9-y9TQxv/view?usp=sharing"} target="_blank" rel="noopener noreferrer" className="flex items-center font-medium text-zinc-100 hover:underline group">
+                  <a href={"https://drive.google.com/file/d/1Kg5163rWfCOUMvhh5pJy0RiDkgmwIq0-/view?usp=sharing"} target="_blank" rel="noopener noreferrer" className="flex items-center font-medium text-zinc-100 hover:underline group">
                     <span className="mr-2">View Full Résumé</span>
                     <ArrowRight className="transition-transform transform group-hover:translate-x-2" />
                   </a>
