@@ -31,6 +31,7 @@
     "rehype-pretty-code": "^0.9.4",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
+    "styled-components": "^6.1.11",
     "styled-icons": "^10.47.1",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.6",

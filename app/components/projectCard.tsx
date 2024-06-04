@@ -41,6 +41,16 @@ export const ProjectCard = ({ title, description, github, badge, image, web }: P
           </div>
         </div>
       </CardContent>
+      <div className="p-4 flex flex-wrap">
+        {badge?.map((item, index) => (
+          <span
+            key={index}
+            className="text-sm text-zinc-100 px-2 py-1 rounded-full border-2 border-zinc-700  m-1"
+          >
+            {item.name}
+          </span>
+        ))}
+      </div>
       <div className="p-4">
         <Button variant="outline" className="m-1" onClick={handleGithubButtonClick}>
           Code
