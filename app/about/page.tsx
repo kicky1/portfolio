@@ -37,7 +37,7 @@ export default async function ProjectsPage() {
             <div className="col-span-2 lg:col-span-1">
               <div className="mt-4">
                 <div className="col-span-12 px-4 space-y-6 lg:col-span-9">
-                  <div className="flex items-center justify-center col-span-12 space-y-12 relative px-4 col-span-8 space-y-8">
+                  <div className="flex items-center justify-center relative px-4 col-span-8 space-y-8">
                     <div className=" max-w-md relative border-2 border-gray-700">
                       <Image src={image.src} alt="" width={360} height={360} className="object-cover shadow-inner " />
                     </div>
@@ -51,7 +51,7 @@ export default async function ProjectsPage() {
         <div className="max-w-7xl mx-auto lg:mx-0">
           <div className="grid grid-cols-2 gap-12">
             <div className="col-span-2 lg:col-span-1">
-              <div className="sticky top-32 z-50">
+              <div className="sticky top-32 z-10">
                 <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Experience</h2>
                 <p className="mt-4 text-zinc-400">
                   Throughout my career, I have been involved in creating web applications that seamlessly blend functionality and aesthetics. Leveraging modern front-end frameworks like <span className="font-bold tracking-tight text-zinc-100">{` React `}</span>
@@ -62,7 +62,7 @@ export default async function ProjectsPage() {
             <div className="flex items-center justify-center col-span-2 lg:col-span-1">
               <div className="mt-4">
                 <div className="col-span-12 px-4 space-y-6 lg:col-span-9">
-                  <div className="col-span-12 space-y-12 relative px-4 col-span-8 space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-3 before:bg-gray-700">
+                  <div className="relative px-4 col-span-8 space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-3 before:bg-gray-700">
                     {data.map((item) => {
                       return <TimelineCard key={uuidv4()} title={item.title} position={item.position} date={item.date} description={item.description} badge={item.badge} />;
                     })}

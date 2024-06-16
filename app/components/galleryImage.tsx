@@ -16,7 +16,7 @@ export const GalleryImage = ({ imageSrc, name }: Props) => {
   return (
     <>
     <span onClick={() => setOpen(true)} >
-    <div className="hover:cursor-pointer max-w-md relative border border-zinc-100 before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-zinc-100 before:border-r before:border-zinc-100  before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)]">
+    <div className="hover:cursor-pointer max-w-md relative border border-zinc-100 before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-r before:border-zinc-100  before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)]">
         <Image
           src={imageSrc}
           alt={name}
