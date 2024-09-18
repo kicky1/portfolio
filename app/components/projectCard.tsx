@@ -5,7 +5,6 @@ import Image from "next/image";
 import placeholder from "../../images/placeholder.png";
 import { Button } from "./ui/button";
 
-
 type Props = {
   title: string;
   description: string;
@@ -15,7 +14,14 @@ type Props = {
   web?: string;
 };
 
-export const ProjectCard = ({ title, description, github, badge, image, web }: Props) => {
+export const ProjectCard = ({
+  title,
+  description,
+  github,
+  badge,
+  image,
+  web,
+}: Props) => {
   const handleGithubButtonClick = () => {
     window.open(github, "_blank");
   };
@@ -36,16 +42,43 @@ export const ProjectCard = ({ title, description, github, badge, image, web }: P
           </div>
           <div className="col-span-3">
             <div style={{ width: "100%", maxWidth: "200px" }}>
-              <Image src={image ? image : placeholder.src} alt={"image"} width={200} height={400} placeholder="blur" blurDataURL={image ? image : placeholder.src} style={{ backgroundColor: "#313135", borderRadius: "5px" }} />
+              <Image
+                src={image ? image : placeholder.src}
+                alt={"image"}
+                width={200}
+                height={400}
+                placeholder="blur"
+                blurDataURL={image ? image : placeholder.src}
+                style={{ backgroundColor: "#313135", borderRadius: "5px" }}
+              />
             </div>
           </div>
         </div>
       </CardContent>
+      <div className="p-4 flex flex-wrap">
+        {badge?.map((item, index) => (
+          <span
+            key={index}
+            className="text-sm text-zinc-100 px-2 py-1 rounded-full border-2 border-zinc-700  m-1"
+          >
+            {item.name}
+          </span>
+        ))}
+      </div>
       <div className="p-4">
-        <Button variant="outline" className="m-1" onClick={handleGithubButtonClick}>
+        <Button
+          variant="outline"
+          className="m-1"
+          onClick={handleGithubButtonClick}
+        >
           Code
         </Button>
-        <Button variant="outline" className="m-1" onClick={handleWebButtonClick} disabled={!web}>
+        <Button
+          variant="outline"
+          className="m-1"
+          onClick={handleWebButtonClick}
+          disabled={!web}
+        >
           Live
         </Button>
       </div>

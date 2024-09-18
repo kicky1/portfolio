@@ -1,3 +1,3 @@
 type BadgeSkill = {
-    name: string
-}
+  name: string;
+};
