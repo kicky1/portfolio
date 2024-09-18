@@ -28,6 +28,7 @@ import {
     Firebase,
     Tailwindcss,
     Mui,
+    Graphql,
 } from '@styled-icons/simple-icons';
 import { cloneElement } from "react";
 
@@ -48,6 +49,7 @@ export const SkillsTable = () => {
         { name: "MongoDB", icon: <Mongodb />, color: "#4DB33D" },
         { name: "Supabase", icon: <Supabase />, color: "#4DB33D" },
         { name: "Firebase", icon: <Firebase />, color: "#f0db4f" },
+        { name: "GraphQL", icon: <Graphql />, color: "#B82357" },
         { name: "AWS", icon: <Aws/>, color: "#FF9900" },
         { name: "Docker", icon: <Docker />, color: "#0db7ed" },
         { name: "Sass", icon: <Sass />, color: "#B82357" },
