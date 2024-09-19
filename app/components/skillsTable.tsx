@@ -28,6 +28,7 @@ import {
   Firebase,
   Tailwindcss,
   Mui,
+  Graphql,
 } from "@styled-icons/simple-icons";
 import { cloneElement } from "react";
 
@@ -42,6 +43,7 @@ export const SkillsTable = () => {
     { name: "Next.js", icon: <Nextdotjs />, color: "#ffffff" },
     { name: "Vue.js", icon: <Vuejs />, color: "#41B883" },
     { name: "Nuxt.js", icon: <Nuxtdotjs />, color: "#41b883" },
+    { name: "GraphQL", icon: <Graphql />, color: "#B82357" },
     { name: "Python", icon: <Python />, color: "#FFE873" },
     { name: "Flask", icon: <Flask />, color: "#ffffff" },
     { name: "Nodejs", icon: <Nodejs />, color: "#68A063" },
