@@ -41,15 +41,14 @@ export const ProjectCard = ({
             <p className="text-zinc-400 h-auto">{description}</p>
           </div>
           <div className="col-span-3">
-            <div style={{ width: "100%", maxWidth: "200px" }}>
+            <div className="relative w-full h-[120px]">
               <Image
                 src={image ? image : placeholder.src}
                 alt={"image"}
-                width={200}
-                height={400}
+                fill
                 placeholder="blur"
                 blurDataURL={image ? image : placeholder.src}
-                style={{ backgroundColor: "#313135", borderRadius: "5px" }}
+                style={{ backgroundColor: "#313135", borderRadius: "5px",  objectFit: 'cover' }}
               />
             </div>
           </div>
