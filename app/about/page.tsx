@@ -159,7 +159,7 @@ export default async function ProjectsPage() {
                 <div className="mt-4 col-span-12 px-4 space-y-6 lg:col-span-9">
                   <a
                     href={
-                      "https://drive.google.com/file/d/1FVZSRuhZgJ1beVFkwVrIOaydOR_KvLo2/view?usp=sharing"
+                      "https://drive.google.com/file/d/1oWLCWht1ZiEUD54tmrJx_yaMvCSNzObC/view?usp=sharing"
                     }
                     target="_blank"
                     rel="noopener noreferrer"
