@@ -32,17 +32,18 @@ export default function Home() {
       <div className=" w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          Hi my name is Krzysztof, for more than 4 years I have been developing
-          web applications
+        Software Developer with over 7 years of experience in web developing,
           <br />
-          as a software developer for{" "}
+          currently employed at {" "} 
           <Link
             target="_blank"
             href="https://sevenet.pl/en"
             className="underline duration-500 hover:text-zinc-300"
           >
-            Sevenet.
+            Sevenet
           </Link>
+          {" "} 
+          for more than 4 years
         </h2>
       </div>
     </div>
