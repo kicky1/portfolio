@@ -45,3 +45,43 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  transition-property: opacity, transform, filter, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+.step {
+  counter-increment: step;
+}
+
+.step:before {
+  position: absolute;
+  display: inline-flex;
+  height: 2.25rem; /* 9 units in rem */
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* Fully rounded */
+  border: 4px solid #000;
+  background-color: #d8d8d8;
+  text-align: center;
+  color: #000;
+  margin-left: -50px;
+  margin-top: -4px;
+  content: counter(step);
+}
+
+.steps > h3 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+}

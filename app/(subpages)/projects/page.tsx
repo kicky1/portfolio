@@ -1,14 +1,12 @@
 import React from "react";
-import { Navigation } from "../components/nav";
-import { ProjectCard } from "../components/projectCard";
-
-import portfoliov2 from "../../images/portfoliov2.png";
-import terraomega from "../../images/terraomega.png";
-import commenterimg from "../../images/commenterimg.png";
-import omeup from "../../images/1up.png";
-import interviewtasks from "../../images/interviewtasks.png";
+import portfoliov2 from "../../../images/portfoliov2.png";
+import terraomega from "../../../images/terraomega.png";
+import commenterimg from "../../../images/commenterimg.png";
+import omeup from "../../../images/1up.png";
+import interviewtasks from "../../../images/interviewtasks.png";
 import bingo from "@/images/bingo.png";
 import rickmorty from "@/images/rickmorty.png";
+import { ProjectCard } from "@/app/components/projectCard";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -29,7 +27,6 @@ export default async function ProjectsPage() {
 
   return (
     <div className="relative pb-16">
-      <Navigation />
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">

@@ -1,6 +1,7 @@
+
 import "../global.css";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
+import { Inter } from 'next/font/google';
+import localFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -13,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "krzysztofwicki",
     description: "Software engineer at Sevenet S.A.",
-    url: "https://krzysztofwicki",
-    siteName: "chronark.com",
+    url: "https://krzysztofwicki.com",
+    siteName: "krzysztofwicki.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://krzysztofwicki.com/og.png",
         width: 1920,
         height: 1080,
       },
@@ -44,12 +45,13 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-const calSans = LocalFont({
+const calSans = localFont({
   src: "../public/fonts/CalSans-SemiBold.ttf",
   variable: "--font-calsans",
 });
@@ -60,17 +62,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-      <head>
-        <Analytics />
-      </head>
+    <html lang="en" className={`${inter.variable} ${calSans.variable}`} suppressHydrationWarning>
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined
         }`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
 }
+

@@ -1,5 +1,6 @@
-import Particles from "./components/particles";
+import Particles from "../components/particles";
 import Link from "next/link";
+import { TransitionLink } from "../components/transition-link";
 
 const navigation = [
   { name: "About me", href: "/about" },
@@ -14,13 +15,14 @@ export default function Home() {
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
-            <Link
+            <TransitionLink
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
             >
+              <div className="duration-200 text-zinc-400 hover:text-zinc-100">
               {item.name}
-            </Link>
+              </div>
+            </TransitionLink>
           ))}
         </ul>
       </nav>

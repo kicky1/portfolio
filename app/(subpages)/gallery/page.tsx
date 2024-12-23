@@ -1,14 +1,11 @@
 import React from "react";
-import { Navigation } from "../components/nav";
-import frog from "../../images/frog.png";
-import pingu from "../../images/pingu.png";
-import drBlight from "../../images/reaper.png";
-import me from "../../images/me.png";
-import furiousChicken from "../../images/chicken.png";
-import alric from "../../images/alric.gif";
-
-import { GalleryImage } from "../components/galleryImage";
-
+import frog from "../../../images/frog.png";
+import pingu from "../../../images/pingu.png";
+import drBlight from "../../../images/reaper.png";
+import me from "../../../images/me.png";
+import furiousChicken from "../../../images/chicken.png";
+import alric from "../../../images/alric.gif";
+import { GalleryImage } from "@/app/components/galleryImage";
 export default async function GalleryPage() {
   const images = [
     { name: "Silfershield Frog", url: frog },
@@ -21,7 +18,6 @@ export default async function GalleryPage() {
 
   return (
     <div className="relative pb-16">
-      <Navigation />
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">

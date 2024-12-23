@@ -1,28 +1,29 @@
 import React from "react";
-import { Navigation } from "../components/nav";
-import { TimelineCard } from "../components/timelineCard";
+import { TimelineCard } from "../../components/timelineCard";
 import Image from "next/image";
-import image from "../../images/portfoliov2.jpg";
+import image from "../../../images/portfoliov2.jpg";
 import { ArrowRight } from "lucide-react";
-import { SkillsTable } from "../components/skillsTable";
-
-const { v4: uuidv4 } = require("uuid");
+import { SkillsTable } from "../../components/skillsTable";
+import Steps from "../../components/steps";
+import Step from "../../components/step";
 
 export default async function ProjectsPage() {
   const data = [
     {
       title: "Sevenet S.A.",
-      position: "Intern",
+      position: "Mid Software Developer",
+      date: "JUL 2022 - present",
       badge: [
-        { name: "HTML" },
-        { name: "CSS" },
-        { name: "JavaScript" },
-        { name: "React" },
-        { name: "Vue" },
+        { name: "TanStack" },
+        { name: "Nuxt" },
+        { name: "Cisco" },
+        { name: "Docker" },
+        { name: "Vue2" },
+        { name: "Figama" },
+        { name: "Adobe XD" },
       ],
-      date: "JUL 2020 - DEC 2020",
       description:
-        "During my internship, I played a key role in creating comprehensive project documentation, which included technical specifications, user manuals, and other essential supporting materials. Additionally, I actively assisted in developing web applications using React and JavaScript, collaborating with the team to troubleshoot and resolve technical issues efficiently. Throughout the process, I effectively utilized project management tools like Redmine to track progress, assign tasks, and maintain seamless communication with team members, ensuring the successful delivery of high-quality products.",
+        "In my capacity as a mid-level software developer, my expertise extended across various domains. I excelled in creating comprehensive documentation for projects and products, which proved invaluable in supporting the software development and delivery process. Additionally, I actively contributed to web app development, utilizing React, Vue, and Vanilla JavaScript, while effectively engaging in testing and debugging activities. My proficiency in project management allowed me to create project plans, manage timelines and milestones, communicate effectively with stakeholders, and diligently track project progress, ensuring timely and successful delivery. Furthermore, I demonstrated creativity and a keen understanding of user experiences (UX) and user interfaces (UI) through wireframing, prototyping, and designing interfaces that were intuitive and user-friendly. My communication skills enabled me to effectively engage with customers, understand their needs and requirements, address concerns and questions, and provide exceptional customer service, contributing to overall product satisfaction and success.",
     },
     {
       title: "Sevenet S.A.",
@@ -40,25 +41,22 @@ export default async function ProjectsPage() {
     },
     {
       title: "Sevenet S.A.",
-      position: "Mid Software Developer",
-      date: "JUL 2022 - present",
+      position: "Intern",
       badge: [
-        { name: "TanStack" },
-        { name: "Nuxt" },
-        { name: "Cisco" },
-        { name: "Docker" },
-        { name: "Vue2" },
-        { name: "Figama" },
-        { name: "Adobe XD" },
+        { name: "HTML" },
+        { name: "CSS" },
+        { name: "JavaScript" },
+        { name: "React" },
+        { name: "Vue" },
       ],
+      date: "JUL 2020 - DEC 2020",
       description:
-        "In my capacity as a mid-level software developer, my expertise extended across various domains. I excelled in creating comprehensive documentation for projects and products, which proved invaluable in supporting the software development and delivery process. Additionally, I actively contributed to web app development, utilizing React, Vue, and Vanilla JavaScript, while effectively engaging in testing and debugging activities. My proficiency in project management allowed me to create project plans, manage timelines and milestones, communicate effectively with stakeholders, and diligently track project progress, ensuring timely and successful delivery. Furthermore, I demonstrated creativity and a keen understanding of user experiences (UX) and user interfaces (UI) through wireframing, prototyping, and designing interfaces that were intuitive and user-friendly. My communication skills enabled me to effectively engage with customers, understand their needs and requirements, address concerns and questions, and provide exceptional customer service, contributing to overall product satisfaction and success.",
+        "During my internship, I played a key role in creating comprehensive project documentation, which included technical specifications, user manuals, and other essential supporting materials. Additionally, I actively assisted in developing web applications using React and JavaScript, collaborating with the team to troubleshoot and resolve technical issues efficiently. Throughout the process, I effectively utilized project management tools like Redmine to track progress, assign tasks, and maintain seamless communication with team members, ensuring the successful delivery of high-quality products.",
     },
   ];
 
   return (
     <div className="relative pb-16">
-      <Navigation />
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-7xl mx-auto lg:mx-0">
           <div className="grid grid-cols-2 gap-12">
@@ -97,22 +95,25 @@ export default async function ProjectsPage() {
               </p>
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <div className="mt-4">
-                <div className="col-span-12 px-4 space-y-6 lg:col-span-9">
-                  <div className="flex items-center justify-center relative px-4 col-span-8 space-y-8">
-                    <div className=" max-w-md relative border-2 border-gray-700">
+            <div className="mt-4">
+              <div className="col-span-12 px-4 space-y-6 lg:col-span-9">
+                <div className="flex items-center justify-center relative px-4 col-span-8 space-y-8">
+                  <div className="max-w-md relative">
+                    <div className="relative">
                       <Image
                         src={image.src}
                         alt=""
                         width={360}
                         height={360}
-                        className="object-cover shadow-inner "
+                        className="object-cover rounded-lg"
                       />
+                      <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.9)] pointer-events-none"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -140,21 +141,20 @@ export default async function ProjectsPage() {
             </div>
             <div className="flex items-center justify-center col-span-2 lg:col-span-1">
               <div className="mt-4">
-                <div className="col-span-12 px-4 space-y-6 lg:col-span-9">
-                  <div className="relative px-4 col-span-8 space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-3 before:bg-gray-700">
-                    {data.map((item) => {
-                      return (
-                        <TimelineCard
-                          key={uuidv4()}
-                          title={item.title}
-                          position={item.position}
-                          date={item.date}
-                          description={item.description}
-                          badge={item.badge}
-                        />
-                      );
-                    })}
-                  </div>
+                <div className="col-span-12 space-y-6 lg:col-span-9">
+                <Steps className="mt-8">
+                  {data.map((item) => (
+                    <Step key={crypto.randomUUID()}>
+                      <TimelineCard
+                        title={item.title}
+                        position={item.position}
+                        date={item.date}
+                        description={item.description}
+                        badge={item.badge}
+                      />
+                    </Step>
+                  ))}
+                </Steps>
                 </div>
                 <div className="mt-4 col-span-12 px-4 space-y-6 lg:col-span-9">
                   <a

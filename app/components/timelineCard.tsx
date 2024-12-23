@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import Step from "./step";
 const { v4: uuidv4 } = require("uuid");
 
 type Props = {
@@ -26,7 +27,7 @@ export const TimelineCard = ({
   badge,
 }: Props) => {
   return (
-    <Card className="ease-linear duration-200 border-2 border-transparent hover:border-gray-700 hover:border-2 flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-zinc-100">
+    <Card className="ease-linear duration-200 border-2 border-transparent hover:border-gray-700 hover:border-2 flex flex-col relative">
       <CardHeader>
         <CardTitle>
           {title}{" "}
